@@ -22,11 +22,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecycler(){
         recyclerView = rv_parent
-
         recyclerView.apply {
             layoutManager = LinearLayoutManager(this@MainActivity, LinearLayout.VERTICAL, false)
             adapter = ParentAdapter(ParentDataFactory.getParents(40))
         }
-
     }
 }
